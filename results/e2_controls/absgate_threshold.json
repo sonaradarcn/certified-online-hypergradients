@@ -1,0 +1,15 @@
+{
+ "p_star": 0.0005027777777777778,
+ "frozen_threshold": 0.05806520209,
+ "first_pass_threshold": 0.0643754974,
+ "calib_seeds": [
+  100,
+  101
+ ],
+ "protocol": "pass 1: gate held shut on seeds 100/101, |ghat| order statistic at p*; pass 2: refit on the realized |ghat| distribution of the pass-1 threshold runs (same calibration seeds); then FROZEN for seeds 0-9",
+ "realized_rate_calib_seeds": {
+  "100": 0.0004444,
+  "101": 0.0004028
+ },
+ "target_rate": 0.00050278
+}

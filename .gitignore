@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# downloaded datasets and model weights (see README, "Data sources")
+data/
+
+# run logs and scratch output written by the launchers
+results/logs/
+results/fleet_logs/
+*.log
+
+# figure output that is regenerated rather than tracked
+paper/
+
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

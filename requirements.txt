@@ -1,0 +1,27 @@
+# COHG dependencies.
+#
+# torch is the one version the paper records: PyTorch 2.12.1 (CUDA 12.6) under
+# Python 3.11.  It is pinned.  torchvision is pinned to the release built
+# against that torch, which the pairing determines rather than a record.
+# Nothing else was written into the run artifacts, so the remaining lines are
+# tested floors at the versions present in the environment that ran the
+# campaigns.  A floor is not a claim that older versions fail; it is a refusal
+# to state a pin that was never recorded.  See REPRODUCIBILITY.md.
+
+torch==2.12.1
+torchvision==0.27.1
+
+numpy>=2.4
+matplotlib>=3.10
+
+# E4 only (GPT-2 124M streaming adaptation).  modelscope is a hard import in
+# experiments/e4_gpt2_tta.py: the weights are fetched from the ModelScope
+# mirror of GPT-2, not from the HuggingFace hub.
+transformers>=5.12
+modelscope>=1.38
+pyarrow>=24.0     # experiments/e4_prepare_data.py reads the WikiText parquet
+                  # in a separate pyarrow-only subprocess
+
+# optional, both guarded by try/except at their call sites
+certifi>=2026.6   # CA bundle for the SILSO / Santa Fe / PTB downloads
+pypdf>=6.0        # page-size check in experiments/make_fig10_misspec.py

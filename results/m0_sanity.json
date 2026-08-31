@@ -1,0 +1,86 @@
+{
+  "results": {
+    "R001a_fmd_vs_dense_quadratic": {
+      "pass": true,
+      "detail": "max abs diff = 0.000e+00"
+    },
+    "R001b_fmd_vs_fd_quadratic": {
+      "pass": true,
+      "detail": "max rel err = 4.238e-10"
+    },
+    "R001b_fmd_vs_fd_mlp": {
+      "pass": true,
+      "detail": "max rel err = 1.284e-10 (nonconvex)"
+    },
+    "R002_cert_valid_r0_K1": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness 7.89x, final e_t=9.895e-01, HVPs=1200"
+    },
+    "R002_cert_valid_r0_K5": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness 34.67x, final e_t=5.349e+00, HVPs=240"
+    },
+    "R002_cert_valid_r2_K1": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness 7.89x, final e_t=6.487e-01, HVPs=1796"
+    },
+    "R002_cert_valid_r2_K5": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness 23.11x, final e_t=1.351e+01, HVPs=356"
+    },
+    "R002_cert_valid_r4_K1": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness nanx, final e_t=0.000e+00, HVPs=2392"
+    },
+    "R002_cert_valid_r4_K5": {
+      "pass": true,
+      "detail": "valid 300/300, median tightness 21.75x, final e_t=1.860e+01, HVPs=472"
+    },
+    "R002_exact_endpoint_r=m_K=1": {
+      "pass": true,
+      "detail": "r=m,K=1 must equal exact FMD: e_T = 0.000e+00"
+    },
+    "controller_gate": {
+      "pass": true,
+      "detail": "frozen under high beta, updated under low beta (gate open frac = 0.50)"
+    }
+  },
+  "certificate_summary": {
+    "r0_K1": {
+      "valid_rate": 1.0,
+      "median_tightness": 7.890065648988721,
+      "final_e": 0.9895231430376497,
+      "hvp_count": 1200
+    },
+    "r0_K5": {
+      "valid_rate": 1.0,
+      "median_tightness": 34.668382090926514,
+      "final_e": 5.348587132492137,
+      "hvp_count": 240
+    },
+    "r2_K1": {
+      "valid_rate": 1.0,
+      "median_tightness": 7.8898898782775655,
+      "final_e": 0.6486546667537022,
+      "hvp_count": 1796
+    },
+    "r2_K5": {
+      "valid_rate": 1.0,
+      "median_tightness": 23.109000679877845,
+      "final_e": 13.50843049036101,
+      "hvp_count": 356
+    },
+    "r4_K1": {
+      "valid_rate": 1.0,
+      "median_tightness": NaN,
+      "final_e": 0.0,
+      "hvp_count": 2392
+    },
+    "r4_K5": {
+      "valid_rate": 1.0,
+      "median_tightness": 21.75398681403952,
+      "final_e": 18.60367633600545,
+      "hvp_count": 472
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# Tracked text is normalised to LF, so the code and documentation are identical
+# on every platform.
+* text=auto eol=lf
+
+# results/ is exempt on purpose.  It holds released run records, checked in
+# byte for byte as the runs wrote them; normalising their line endings would
+# rewrite them.  The same exemption keeps the generated reports and CSVs under
+# results/ stable, so `git status` staying clean after re-running an analysis
+# script remains a real check that the committed reports match the committed
+# raw records.
+results/** -text
+
+*.png binary
+*.pdf binary
